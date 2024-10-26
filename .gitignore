@@ -1,0 +1,17 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore the Terraform configuration backup files
+*.tfplan
+
+# Ignore local environment files
+*.tfvars
+.terraform/
+wk/.terraform/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+*.exe
