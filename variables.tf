@@ -1,6 +1,6 @@
 variable "aws_region" {
   description = "The AWS region to deploy in"
-  default = "us-east-1"
+  default     = "us-east-1"
 }
 
 variable "instance_type" {
@@ -17,10 +17,10 @@ variable "instance_name" {
 variable "bucket_name" {
   description = "The name of the S3 bucket for remote state storage."
   type        = string
-  default = "umesh00984"
+  default     = "umesh00984"
 }
 variable "dynamodb_table" {
   description = "The name of the DynamoDB table for state locking."
   type        = string
-  default = "umesh98483"
+  default     = "umesh98483"
 }

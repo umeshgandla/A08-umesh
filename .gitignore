@@ -15,3 +15,4 @@ wk/.terraform/
 .idea/
 
 *.exe
+*.terraform.lock.hcl

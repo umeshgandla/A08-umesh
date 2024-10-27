@@ -19,8 +19,8 @@
 
 
 module "ec2_instance" {
-  source        = "./modules/ec2"  # Path to the module
-  ami_id       = "ami-0ddc798b3f1a5117e"
+  source        = "./modules/ec2" # Path to the module
+  ami_id        = "ami-0ddc798b3f1a5117e"
   instance_type = var.instance_type
   instance_name = "${var.instance_name}-${terraform.workspace}-ec2"
   tags = {
@@ -38,7 +38,7 @@ resource "aws_dynamodb_table" "rdyb" {
   billing_mode = "PAY_PER_REQUEST" # mode means you only pay for the read and write requests
 
   attribute {
-    name = "LockID"     #  partition key for the DynamoDB table
+    name = "LockID" #  partition key for the DynamoDB table
     type = "S"
   }
   hash_key = "LockID" #LockID will be the unique identifier for each lock entry stored in the table,
